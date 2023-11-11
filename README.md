@@ -2,8 +2,7 @@
 ## Description
 Creating Flask web application that implements user authentication and a simple TodoList functionality.
 
-![image](https://github.com/ferris110443/05.Login_TodoList_Flask/assets/58131832/e163d190-9025-46e2-ba0f-b76bf58aa0e9)
-![image](https://github.com/ferris110443/05.Login_TodoList_Flask/assets/58131832/7936fec1-3e82-493e-bfbc-6240ef1a5ebd)
+
 
 ## Built with
 1. HTML

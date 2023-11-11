@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{%block title%} Home {%endblock%}
+{%block content%}
+    <h1 class="note-title"> TodoList </h1>
+    <ul class="list-group list-group-flush" id="notes">
+        {%for note in user.notes%}
+
+        <div class="list-group-item">
+            <p>{{note.data}}</p>
+            <button type="button" class="btn btn-secondary" onclick=deleteNote({{note.id}})>DEL</button>
+        </div>
+               
+        {%endfor%}
+    </ul>
+    <form method="POST">
+        <div class="add-note-container">
+            <textarea name = 'note' id = 'note' class ='form-control'></textarea>
+            <br>            
+        </div>
+        <div class="note-container" style = 'text-align:center'>
+            <button type = 'submit' class="btn btn-primary">Add note</button>
+        </div>
+    </form>
+
+{%endblock%}
